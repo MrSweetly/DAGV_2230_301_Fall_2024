@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Ball_Bounce.ma
-//Last modified: Fri, Sep 06, 2024 07:44:25 PM
+//Last modified: Sun, Sep 08, 2024 05:51:10 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "C4E83166-48B7-593C-0192-9087FC72A73E";
+fileInfo "UUID" "E31B7255-445E-1986-B9C3-CABE2EE68B20";
 createNode transform -s -n "persp";
 	rename -uid "2A177B93-4DE5-F5DC-BA88-CE8B8FBA567A";
 	setAttr ".v" no;
@@ -282,11 +282,11 @@ createNode animCurveTA -n "pSphere1_rotateZ";
 	setAttr -s 3 ".kox[1:2]"  0.25218414159823738 0.83825795853214313;
 	setAttr -s 3 ".koy[1:2]"  0.9676792643879274 0.5452738715155202;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "1685A45A-488F-4199-D01F-D093FA408302";
+	rename -uid "1FB64AD9-4465-3F69-0B0F-91A86213EEC5";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
-	setAttr ".o" 74;
-	setAttr ".unw" 74;
+	setAttr ".o" 80;
+	setAttr ".unw" 80;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
